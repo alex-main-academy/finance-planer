@@ -1,0 +1,320 @@
+@font-face {
+  font-family: 'Bakbak One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bakbakone/v3/zOL54pXAl6RI-p_ardnuycQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserratalternates/v12/mFTvWacfw6zH4dthXcyms1lPpC8I_b0juU0J7A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/outfit/v1/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1C4E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/readexpro/v5/SLXYc1bJ7HE5YDoGPuzj_dh8na74KiwZQQxfm7w3.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bakbak One', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Readex Pro', sans-serif;
+}
+.top__menu {
+  background: rgba(79, 83, 85, 0.527);
+  padding: 10px 0;
+}
+.menu__sum {
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.767);
+}
+.menu__data {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.534);
+}
+.salaries {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.expense {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 10px solid rgba(216, 87, 87, 0.445);
+  margin: 10px auto 0 auto;
+  border-radius: 50%;
+}
+.expense__text {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.63);
+}
+.expense__name {
+  color: red;
+}
+.income {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 10px solid rgba(70, 235, 120, 0.452);
+  margin: 10px auto 0 auto;
+  border-radius: 50%;
+}
+.income__text {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.63);
+}
+.income__name {
+  color: chartreuse;
+}
+.categories {
+  margin: 30px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.categories__item {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 10px 0;
+}
+.categories__text {
+  font-size: 20px;
+}
+.categories__icon {
+  width: 50px;
+  height: 50px;
+  background: #fa5252;
+  border-radius: 50%;
+  margin: 5px 0 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categories__sum {
+  font-weight: bold;
+}
+.add__categories {
+  background: rgba(128, 128, 128, 0.164);
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add__categories img {
+  width: 40px;
+}
+.add__categories:hover {
+  cursor: pointer;
+}
+.modal__window {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  transform: translate(-100%);
+  transition-duration: 500ms;
+  top: 0;
+  background: rgba(128, 128, 128, 0.918);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal__block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0 0 0;
+}
+.modal__block p {
+  font-size: 20px;
+  color: white;
+}
+.modal__block input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 247, 255, 0.486);
+  background: none;
+  color: white;
+  font-size: 15px;
+  margin: 0 0 0 10px;
+}
+.modal__block input:focus {
+  outline: none;
+}
+.modal__title {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  line-height: 25px;
+  margin: 20px 0 40px 0;
+}
+.close__modal {
+  margin: 40px auto 0 auto;
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.add__modal {
+  width: 150px;
+  height: 40px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.modal__block__2 {
+  margin: 20px 0 0 0;
+}
+.modal__block__2 p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+.modal__block__2 .block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0 0 0;
+}
+.modal__block__2 .block img {
+  width: 40px;
+  margin: 5px;
+  padding: 5px;
+}
+.modal__block__2 .block img.active {
+  background: chartreuse;
+  transition-duration: 300ms;
+}
+.modal__block__1 {
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+.modal__block__1 p {
+  font-size: 20px;
+  color: white;
+  margin: 0 20px 0 0;
+}
+.modal__block__1 input {
+  margin: 10px 0 0 0;
+}
+.modal__calc {
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  transform: translate(-100%);
+  top: 0;
+  transition-duration: 500ms;
+  display: flex;
+  flex-direction: column;
+}
+.calc__input {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calc__input-value {
+  font-size: 48px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.backspace {
+  width: 64px;
+  margin: 0 0 0 10px;
+}
+.calc__keyboard {
+  display: flex;
+  flex-direction: column;
+}
+.block__1 {
+  display: flex;
+  height: 90px;
+}
+.block__2 {
+  display: flex;
+  height: 90px;
+}
+.block__3 {
+  display: flex;
+  height: 90px;
+}
+.block__4 {
+  display: flex;
+  height: 90px;
+}
+.calc__number {
+  border: 1px dotted #b6b6b6;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calc__number p {
+  font-size: 48px;
+}
+.calc__add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(1, 182, 10, 0.829);
+  width: 67%;
+  font-size: 32px;
+}
+.calc__comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  border: 1px dotted #b6b6b6;
+}
+.comment__input {
+  width: 70%;
+  height: 35px;
+  font-size: 18px;
+  color: gray;
+  border: none;
+  padding: 0 10px;
+}
+.comment__input:focus {
+  outline: none;
+}
+.comment__input::placeholder {
+  font-size: 15px;
+  color: #c9c9c9;
+}
